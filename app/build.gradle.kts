@@ -50,7 +50,17 @@ android {
 }
 
 dependencies {
+    //ViewModel
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    //Network Calls
+    implementation(libs.retrofit)
+    //Json to kotlin object mapping
+    implementation(libs.converter.gson)
+    //Coil(Coroutine Image Loader)
+    //For image loading(a coroutine based image loading library)
+    //Used for async image loading
+    implementation(libs.coil.compose)
+    //Usual dependencies
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
