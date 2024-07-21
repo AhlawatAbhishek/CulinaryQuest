@@ -1,0 +1,1 @@
+🍲 CulinaryQuest: Dive into the world of cooking with this native Android app built in Kotlin. Utilizing Jetpack Compose, MVVM architecture, and Retrofit, this app fetches delicious recipes via Restful APIs, presenting a seamless culinary exploration. 🌐📱
