@@ -8,12 +8,19 @@ import kotlinx.coroutines.launch
 import java.lang.Exception
 
 class MainViewModel : ViewModel() {
+   init {
+        fetchCategories()
+   }
     private val _categoryState = mutableStateOf(RecipeState())
     val categoryState: State<RecipeState> = _categoryState
     private fun fetchCategories() {
         viewModelScope.launch {
             try {
-
+                val response = apiService.getCategories()
+                _categoryState.value = _categoryState.value.copy(
+                    loading = false, categories = response.categories
+                    , error = null
+                )
             } catch (e: Exception) {
                 _categoryState.value = _categoryState.value.copy(
                     loading = false, error = "Error fetching recipe ${e.message}"
