@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 
 @Composable
-fun RecipeScreen(modifier: Modifier = Modifier) {
+fun RecipeScreen(modifier: Modifier = Modifier, navigateToDetail : (Category) -> Unit) {
      val recipeViewModel: MainViewModel = viewModel()
     val viewState = recipeViewModel.categoryState
     Box(modifier = modifier.fillMaxSize()){
@@ -23,7 +23,7 @@ fun RecipeScreen(modifier: Modifier = Modifier) {
                 }
                 else -> {
                         //Display the list of categories
-                        CategoryScreen(categories = viewState.value.categories)
+                        CategoryScreen(categories = viewState.value.categories, navigateToDetail)
                 }
             }
     }
