@@ -60,6 +60,8 @@ dependencies {
     //For image loading(a coroutine based image loading library)
     //Used for async image loading
     implementation(libs.coil.compose)
+    //For Navigation
+    implementation(libs.navigation.compose)
     //Usual dependencies
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
