@@ -10,20 +10,20 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 
 @Composable
-fun RecipeScreen(modifier: Modifier = Modifier, navigateToDetail : (Category) -> Unit) {
+fun RecipeScreen(modifier: Modifier = Modifier, viewState : MainViewModel.RecipeState, navigateToDetail : (Category) -> Unit) {
      val recipeViewModel: MainViewModel = viewModel()
-    val viewState = recipeViewModel.categoryState
+
     Box(modifier = modifier.fillMaxSize()){
             when{
-                viewState.value.loading -> {
+                viewState.loading -> {
                         CircularProgressIndicator(modifier.align(Alignment.Center))
                 }
-                viewState.value.error != null -> {
-                        Text("ERROR: ${viewState.value.error}", modifier.align(Alignment.Center))
+                viewState.error != null -> {
+                        Text("ERROR: ${viewState.error}", modifier.align(Alignment.Center))
                 }
                 else -> {
                         //Display the list of categories
-                        CategoryScreen(categories = viewState.value.categories, navigateToDetail)
+                        CategoryScreen(categories = viewState.categories, navigateToDetail)
                 }
             }
     }

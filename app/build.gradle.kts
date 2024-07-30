@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    //require for parcelize
+    id("org.jetbrains.kotlin.plugin.parcelize") version "2.0.20-RC"
+    id("org.jetbrains.kotlin.plugin.compose") version "2.0.0"
 }
 
 android {
