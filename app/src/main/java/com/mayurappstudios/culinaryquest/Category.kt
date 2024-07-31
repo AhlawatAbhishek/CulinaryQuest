@@ -1,7 +1,7 @@
 package com.mayurappstudios.culinaryquest
 
 import android.os.Parcelable
-import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
 
 //Category data class for data fetching from themealdb.com API
 //Pay attention to the variable in the parameter of the data class they need to be
