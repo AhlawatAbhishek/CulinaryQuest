@@ -1,9 +1,11 @@
-package com.mayurappstudios.culinaryquest
+package com.mayurappstudios.culinaryquest.viewmodel
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.mayurappstudios.culinaryquest.model.Category
+import com.mayurappstudios.culinaryquest.model.apiService
 import kotlinx.coroutines.launch
 import java.lang.Exception
 

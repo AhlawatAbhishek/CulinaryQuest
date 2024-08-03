@@ -1,4 +1,4 @@
-package com.mayurappstudios.culinaryquest
+package com.mayurappstudios.culinaryquest.view
 
 sealed class Screen(val route : String) {
      object RecipeScreen : Screen("recipescreen")

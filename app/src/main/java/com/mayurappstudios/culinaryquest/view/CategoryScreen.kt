@@ -1,4 +1,4 @@
-package com.mayurappstudios.culinaryquest
+package com.mayurappstudios.culinaryquest.view
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -21,6 +21,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
+import com.mayurappstudios.culinaryquest.model.Category
 
 @Composable
 fun CategoryScreen(categories: List<Category>, navigateToDetail : (Category) -> Unit) {

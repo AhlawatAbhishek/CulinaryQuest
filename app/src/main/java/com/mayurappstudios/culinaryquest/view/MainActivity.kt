@@ -1,4 +1,4 @@
-package com.mayurappstudios.culinaryquest
+package com.mayurappstudios.culinaryquest.view
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

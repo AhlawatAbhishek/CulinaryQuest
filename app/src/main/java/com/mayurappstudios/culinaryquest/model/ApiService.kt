@@ -1,4 +1,4 @@
-package com.mayurappstudios.culinaryquest
+package com.mayurappstudios.culinaryquest.model
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

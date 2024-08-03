@@ -1,4 +1,4 @@
-package com.mayurappstudios.culinaryquest
+package com.mayurappstudios.culinaryquest.view
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -8,6 +8,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.mayurappstudios.culinaryquest.model.Category
+import com.mayurappstudios.culinaryquest.viewmodel.MainViewModel
 
 @Composable
 fun RecipeScreen(modifier: Modifier = Modifier, viewState : MainViewModel.RecipeState, navigateToDetail : (Category) -> Unit) {

@@ -1,4 +1,4 @@
-package com.mayurappstudios.culinaryquest
+package com.mayurappstudios.culinaryquest.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

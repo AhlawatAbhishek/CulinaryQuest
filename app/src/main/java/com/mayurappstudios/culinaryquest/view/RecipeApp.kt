@@ -1,4 +1,4 @@
-package com.mayurappstudios.culinaryquest
+package com.mayurappstudios.culinaryquest.view
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -6,6 +6,8 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.mayurappstudios.culinaryquest.model.Category
+import com.mayurappstudios.culinaryquest.viewmodel.MainViewModel
 
 @Composable
 fun RecipeApp(modifier: Modifier = Modifier, navController: NavHostController) {
